@@ -1,41 +1,41 @@
-# Announcement - Slidev Addon Component
+# Announcement - a Slidev Addon Component
 
 A small component to add an announcement to a page.
 
+![Visits](https://visitorbadge.vercel.app//api/badge/bac877ab-78b0-4dae-9bf2-2f53fdc0b612?style=for-the-badge&color=00ad14&labelColor=000000)
 
-![Visits](https://visitorbadge.vercel.app//api/badge/0eb6e5bf-1c67-400f-a9b3-17f25997c209?style=for-the-badge&color=bd0000&labelColor=000000)
+## Latest Update [![NPM version](https://img.shields.io/npm/v/slidev-addon-announcement?color=911118&label=)](https://www.npmjs.com/package/slidev-addon-announcement)
 
+- Fix errors in `ReadMe.md`
 
-## Latest Update [![NPM version](https://img.shields.io/npm/v/slidev-addon-announcement?color=c141f8&label=)](https://www.npmjs.com/package/slidev-addon-announcement)
+## Installing Announcements
 
-- Add `Announcement` component ([Skip to Components section](#components))
-- Tidy up errors in `ReadMe.md`
-- Minor fixes to heading styles
+To add to your `Slidev` presentation use: 
 
-
-
-## Requirements
-
-Following packages are required for use:
-
-- 'unocss'
-- '@iconify-json/fa7-brands'
-- '@iconify-json/fa7-regular'
-- '@iconify-json/fa7-solid'
-- '@unocss/preset-icons'
-
-Install using:
-
-### npm
 ```shell
-npm i -D @unocss/preset-icons unocss
-npm i -D @iconify-json/fa7-brands @iconify-json/fa7-regular @iconify-json/fa7-solid
+pnpm i slidev-addon-announcement --save
 ```
 
-### pnpm
-```shell
-npm i -D @iconify-json/fa7-brands @iconify-json/fa7-regular @iconify-json/fa7-solid @unocss/preset-icons unocss
+Alternatively, add to the addons section in your package.json:
+
 ```
+"slidev": {
+    "addons": [
+        "slidev-addon-infographic"
+    ]
+}
+```
+
+Add the following to your slides.md:
+
+```markdown
+---
+addons:
+- slidev-addon-infographic
+---
+```
+
+
 
 ## Using Announcement
 
@@ -93,7 +93,7 @@ The variants are shown below:
 
 ### Default Note
 
-![vivaldi_ud7iYfpT7l.png](assets/announcement-default.png)
+![vivaldi_ud7iYfpT7l.png](https://github.com/AdyGCode/slidev-addon-announcement/blob/main/assets/announcement-default.png?raw=true)
 
 ```vue
 <Announcement type="default" title="Default Note">
@@ -103,7 +103,7 @@ The variants are shown below:
 
 ### Idea
 
-![vivaldi_o9dXLjuo1a.png](assets/announcement-idea.png)
+![vivaldi_o9dXLjuo1a.png](https://github.com/AdyGCode/slidev-addon-announcement/blob/main/assets/announcement-idea.png?raw=true)
 
 ```vue
 <Announcement type="idea" title="Idea" >
@@ -113,7 +113,7 @@ The variants are shown below:
 
 ### Brainstorm
 
-![vivaldi_YItAahbh7Y.png](assets/announcement-brainstorm.png)
+![vivaldi_YItAahbh7Y.png](https://github.com/AdyGCode/slidev-addon-announcement/blob/main/assets/announcement-brainstorm.png?raw=true)
 
 ```vue
 <Announcement type="brainstorm" title="Brainstorm" inline>
@@ -123,7 +123,7 @@ The variants are shown below:
 
 ### Duration
 
-![vivaldi_QhRet6gn7X.png](assets/announcement-duration.png)
+![vivaldi_QhRet6gn7X.png](https://github.com/AdyGCode/slidev-addon-announcement/blob/main/assets/announcement-duration.png?raw=true)
 
 ```vue
 <Announcement type="duration" title="Duration" >
@@ -134,7 +134,7 @@ The variants are shown below:
 
 ### Error
 
-![vivaldi_3mJ3v6YlCy.png](assets/announcement-error.png)
+![vivaldi_3mJ3v6YlCy.png](https://github.com/AdyGCode/slidev-addon-announcement/blob/main/assets/announcement-error.png?raw=true)
 
 ```vue
 <Announcement type="error" title="Error" >
@@ -144,7 +144,7 @@ The variants are shown below:
 
 ### Warning
 
-![vivaldi_rVNJT6RFoH.png](assets/announcement-warning.png)
+![vivaldi_rVNJT6RFoH.png](https://github.com/AdyGCode/slidev-addon-announcement/blob/main/assets/announcement-warning.png?raw=true)
 
 ```vue
 <Announcement type="warning" >
@@ -154,7 +154,7 @@ The variants are shown below:
 
 ### Information
 
-![vivaldi_nSxFPsnSoG.png](assets/announcement-information.png)
+![vivaldi_nSxFPsnSoG.png](https://github.com/AdyGCode/slidev-addon-announcement/blob/main/assets/announcement-information.png?raw=true)
 
 ```vue
 <Announcement type="info" >
@@ -164,7 +164,7 @@ The variants are shown below:
 
 ### Important
 
-![vivaldi_EDp0SqaIXh.png](assets/announcement-important.png)
+![vivaldi_EDp0SqaIXh.png](https://github.com/AdyGCode/slidev-addon-announcement/blob/main/assets/announcement-important.png?raw=true)
 
 ```vue
 <Announcement type="important" title="Important">
@@ -174,7 +174,7 @@ The variants are shown below:
 
 ### Priority
 
-![vivaldi_fyGBubZXgz.png](assets/announcement-priority.png)
+![vivaldi_fyGBubZXgz.png](https://github.com/AdyGCode/slidev-addon-announcement/blob/main/assets/announcement-priority.png?raw=true)
 
 ```vue
 <Announcement type="priority" compact width=full>
@@ -184,7 +184,7 @@ The variants are shown below:
 
 ### Overriding icons
 
-![vivaldi_6HFCXMNsjS.png](assets/announcement-custom-icon.png)
+![vivaldi_6HFCXMNsjS.png](https://github.com/AdyGCode/slidev-addon-announcement/blob/main/assets/announcement-custom-icon.png?raw=true)
 
 ```vue
 <Announcement type="info" title="Heads up">
@@ -195,6 +195,30 @@ The variants are shown below:
 </Announcement>
 ```
 
+## Requirements
 
+Following packages are required for use:
+
+- 'unocss'
+- '@iconify-json/fa7-brands'
+- '@iconify-json/fa7-regular'
+- '@iconify-json/fa7-solid'
+- '@unocss/preset-icons'
+
+You may manually install these using:
+
+### npm
+```shell
+npm i -D @unocss/preset-icons unocss
+npm i -D @iconify-json/fa7-brands @iconify-json/fa7-regular 
+npm i -D @iconify-json/fa7-solid
+```
+
+### pnpm
+```shell
+pnpm i -D @unocss/preset-icons unocss
+pnpm i -D @iconify-json/fa7-brands @iconify-json/fa7-regular 
+pnpm i -D @iconify-json/fa7-solid 
+```
 
 Learn more about Slidev at the [documentation](https://sli.dev/).
