@@ -21,7 +21,7 @@ Alternatively, add to the addons section in your package.json:
 ```
 "slidev": {
     "addons": [
-        "slidev-addon-infographic"
+        "slidev-addon-announcement"
     ]
 }
 ```
@@ -31,7 +31,7 @@ Add the following to your slides.md:
 ```markdown
 ---
 addons:
-- slidev-addon-infographic
+  - announcement
 ---
 ```
 
