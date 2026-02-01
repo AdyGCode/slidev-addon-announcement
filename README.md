@@ -117,7 +117,7 @@ The variants are shown below:
 
 ```vue
 <Announcement type="brainstorm" title="Brainstorm" inline>
-    Ue to identify when brainstorming of ideas is an activity
+    Use to identify when brainstorming of ideas is an activity
 </Announcement>
 ```
 
@@ -177,7 +177,7 @@ The variants are shown below:
 ![vivaldi_fyGBubZXgz.png](https://github.com/AdyGCode/slidev-addon-announcement/blob/main/assets/announcement-priority.png?raw=true)
 
 ```vue
-<Announcement type="priority" compact width=full>
+<Announcement type="priority" compact width="full">
     Do or Read this before you do anything else
 </Announcement>
 ```

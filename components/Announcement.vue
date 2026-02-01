@@ -6,18 +6,23 @@ const props = defineProps({
     type: String,
     default: 'default',
     validator: (v) =>
-        ['default', 'error', 'warning', 'info', 'duration', 'important', 'priority','idea', 'brainstorm'].includes(v),
+        [ 'default', 'error', 'warning', 'info',
+          'duration', 'important', 'priority','idea', 'brainstorm'].includes(v),
   },
   role: {
     type: String,
     default: '',
   },
-  /** Compact variant (smaller) */
+  /**
+   * Compact variant (smaller)
+   */
   compact: {
     type: Boolean,
     default: false,
   },
-  /** Label shown before the slot content (optional) */
+  /**
+   * Label shown before the slot content (optional)
+   */
   title: {
     type: String,
     default: '',
@@ -104,6 +109,7 @@ const iconClasses = computed(() => {
   const insets = props.compact ? 'my-0.5' : 'my-1'
   return [
     current.value.iconClass,
+    insets,
     'self-stretch aspect-square inline-block',
   ].join(' ')
 })
