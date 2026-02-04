@@ -1,6 +1,6 @@
 {
   "name": "slidev-addon-announcement",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "type": "module",
   "description": "A slidev component addon to provide 'announcements'",
   "author": "Adrian Gould <ady.g.coder@gmail.com>",
@@ -20,17 +20,21 @@
     "node": ">=18.0.0",
     "slidev": ">=0.49.0"
   },
+  "files": [
+    "components",
+    "vite.config.ts"
+  ],
   "dependencies": {
     "@slidev/cli": "latest",
     "@slidev/theme-default": "latest",
     "@slidev/types": "latest",
-    "vue": "^3.5.27"
-  },
-  "devDependencies": {
+    "vue": "^3.5.27",
     "@iconify-json/fa7-brands": "latest",
     "@iconify-json/fa7-regular": "latest",
     "@iconify-json/fa7-solid": "latest",
-    "@unocss/preset-icons": "latest",
+    "@unocss/preset-icons": "latest"
+  },
+  "devDependencies": {
     "unocss": "latest"
   }
 }
