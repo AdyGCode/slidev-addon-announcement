@@ -1,6 +1,6 @@
 {
   "name": "slidev-addon-announcement",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "type": "module",
   "description": "A slidev component addon to provide 'announcements'",
   "author": "Adrian Gould <ady.g.coder@gmail.com>",
