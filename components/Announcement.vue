@@ -1,4 +1,22 @@
-<script setup>
+<template>
+  <div :class="containerClasses" :role="ariaRole">
+
+    <slot name="icon">
+      <i :class="iconClasses" aria-hidden="true"></i>
+    </slot>
+
+    <span class="self-center">
+      <template v-if="title">
+        <strong class="mr-1">{{ title }}:</strong>
+      </template>
+      <slot/>
+    </span>
+
+  </div>
+</template>
+
+<script setup lang="ts">
+
 import {computed} from 'vue'
 
 const props = defineProps({
@@ -119,20 +137,3 @@ const ariaRole = computed(() => {
   return ['error', 'warning'].includes(props.type) ? 'alert' : 'status'
 })
 </script>
-
-<template>
-  <div :class="containerClasses" :role="ariaRole">
-
-    <slot name="icon">
-      <i :class="iconClasses" aria-hidden="true"></i>
-    </slot>
-
-    <span class="self-center">
-      <template v-if="title">
-        <strong class="mr-1">{{ title }}:</strong>
-      </template>
-      <slot/>
-    </span>
-
-  </div>
-</template>
